@@ -1,12 +1,14 @@
 import React from 'react';
-import { Button, Card, CardContent, Typography } from '@mui/material';
+import { ButtonGroup, Button, Card, CardContent, Typography } from '@mui/material';
 import { useStyles } from '../styles';
+
 
 const About = () => {
     const classes = useStyles();
 
     return (
         <div className={classes.container}>
+
             <Card className={classes.card} >
                 <CardContent>
                     <Typography variant='body1' paragraph >
@@ -22,9 +24,12 @@ const About = () => {
                     These programs provided the right impetus to continue learning and growing my web and software development skills. I am currently seeking an junior or entry-level position with web applications development, so that I may grow and learn further as a software developer.
                     </Typography>
                 </CardContent>
-                <Button>Resume/CV</Button>
-                <Button>Portfolio</Button>
-                <Button>Radio</Button>
+                <ButtonGroup >
+                    <Button>Resume/CV</Button>
+                    <Button>Portfolio</Button>
+                    <Button>Radio</Button>
+                </ButtonGroup>
+                
             </Card>
         </div>
     )
